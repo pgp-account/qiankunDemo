@@ -21,9 +21,9 @@ function render(props = {}) {
   }
 
   // 在项目中任何需要监听的地方进行监听，在这里监听是为了方便
-  actions.onGlobalStateChange((state,prev)=>{
-    console.log('main state change',state);
-  })
+  // actions.onGlobalStateChange((state,prev)=>{
+  //   console.log('main state change',state);
+  // })
 
   // 当传入的 shared 为空时，使用子应用自身的 shared
   // 当传入的 shared 不为空时，主应用传入的 shared 将会重载子应用的 shared
