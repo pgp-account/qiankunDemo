@@ -3,7 +3,7 @@
     <section class="home-container">Home</section>
     <!--增加action修改state的按钮-->
     <input class="home-button" type="button" value = "传入vue " @click = "changeVueState('主页传输给vue的值 vue')">
-    <input class="home-button" type="button" value = "传入react " @click = "changeReactState('主页传输给react的值 react')">
+    <!-- <input class="home-button" type="button" value = "传入react " @click = "changeReactState('主页传输给react的值 react')"> -->
     <br/>
     <!--增加shared修改state的按钮-->
     <button class="home-button" @click = "shared2Vue('主页传的值 sharedvue')">shared传入</button>

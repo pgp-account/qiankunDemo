@@ -27,9 +27,7 @@ export default {
     // 注册观察者函数
     // onGlobalStateChange 第二个参数为 true，表示立即执行一次观察者函数
     // 增加state监听，当mt数据发生变化的时候，我们修改name，体现在页面上
-    actions.onGlobalStateChange((state, prevState) => {
-      console.log("11111111111",state)
-      console.log("11111111111",prevState)
+    actions.onGlobalStateChange((state) => {
       const { main2vueMsg } = state;
       // 未登录 - 返回主页
       if (!main2vueMsg) {
@@ -50,8 +48,7 @@ export default {
     }    
   },
   methods:{
-    send2React(value){
-      
+    send2React(value){      
       const shared = SharedModule.getShared();
       shared.setVue2react(value);
       console.log('........................send2React',shared.getVue2react(value), shared.getSharedValue() )

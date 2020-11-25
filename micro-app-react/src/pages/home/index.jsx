@@ -3,7 +3,7 @@ import actions from '../../shared/action';
 import SharedModule from "@/shared";
 
 const Home = () => {
-  const [msg, setMessage] = useState();
+  const [ setMessage] = useState();
   const [vue2react, setVue2React] = useState();
   const [sharedValue,setSharedValue] = useState();
   // eslint-disable-next-line 
@@ -47,8 +47,8 @@ const Home = () => {
   return(
     <div>
       <section style={{ padding: 20 }}>React App</section>
-      <h3>msg:</h3>{msg? msg : 'init react msg'}
-      <br/>
+      {/* <h3>msg:</h3>{msg? msg : 'init react msg'}
+      <br/> */}
       <h3>vue2react:</h3>{vue2react ? vue2react : 'vue didnt send value to react'}
       <br/>
       <h3>sharedValue:</h3>{sharedValue ? sharedValue : 'init sharedValue'}

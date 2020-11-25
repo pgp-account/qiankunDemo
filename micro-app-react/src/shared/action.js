@@ -21,16 +21,16 @@ class Actions {
    * 映射
    */
   onGlobalStateChange(...args) {
-    return emptyAction()
-    //return this.actions.onGlobalStateChange(...args);
+    //return emptyAction()
+    return this.actions.onGlobalStateChange(...args);
   }
 
   /**
    * 映射
    */
   setGlobalState(...args) {
-    return emptyAction()
-    //return this.actions.setGlobalState(...args);
+    //return emptyAction()
+    return this.actions.setGlobalState(...args);
   }
 }
 
